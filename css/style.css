@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+:root {
+    --base-white: #f7f8f9;
+    --font-base: #6E7688;
+    --font-sub: #9AA1A8;
+    --hover: #AFC6D8;
+    --border: #E3E6E9;
+    --font-strong: #2E3136;
+    --bg-light: #D2DEEE;
+    --base-dark: #3A3D42;
+}
+
+/* layout */
+body {
+    font-family: 'Inter', 'Noto Sans JP', sans-serif;
+    color: var(--font-base);
+    font-size: 16px;
+    background: var(--base-white);
+    line-height: 180%;
+}
+
+img {
+    width: 100%;
+}
+
+/* -----------------共通部分---------------- */
+/* layout */
+.l-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 100px;
+}
+
+.l-footer {
+    background: var(--base-dark);
+    color: var(--hover);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-block: 12px;
+}
+
+/* component */
+/* header */
+.c-header-logo {
+    width: 168px;
+}
+
+.c-header-nav {
+    display: flex;
+    gap: 24px;
+}
+
+.c-header-nav__list a {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.c-header-nav__list:hover {
+    border-bottom: 1px solid var(--font-base);
+}
+
+/* other */
+.c-title {
+    font-size: clamp(32px, 26.146px + 1.561vw, 48px);
+    font-weight: bold;
+    color: var(--font-strong);
+    border-bottom: solid var(--font-base);
+    border-bottom-width: clamp(5px, 4.634px + 0.098vw, 6px);
+    display: inline-block;
+}
+
+.c-btn-container {
+    text-align: center;
+}
+
+.c-btn {
+    border: 1px solid var(--font-base);
+    display: inline-block;
+    padding-block: 10px;
+    width: 200px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.c-btn a {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+/* footer */
+.c-footer-logo {
+    width: 168px;
+}
+
+.c-footer-sns ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.c-footer-nav ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 57px;
+    padding-inline: 300px;
+}
+
+.c-footer-nav__list {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.c-footer-sns li:hover,
+.c-footer-nav__list:hover {
+    border-bottom: 1px solid var(--hover);
+}
+
+.c-copy {
+    font-size: 12px;
+}
+
+/* -----------------top-------------------- */
