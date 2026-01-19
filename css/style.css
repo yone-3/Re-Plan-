@@ -52,6 +52,7 @@ img {
 .c-header-nav {
     display: flex;
     gap: 24px;
+    align-items: center;
 }
 
 .c-header-nav__list a {
@@ -60,7 +61,11 @@ img {
 }
 
 .c-header-nav__list:hover {
-    border-bottom: 1px solid var(--font-base);
+    text-decoration: underline 1px var(--font-base);
+}
+
+.c-logo__insta a img {
+    display: block;
 }
 
 /* other */
