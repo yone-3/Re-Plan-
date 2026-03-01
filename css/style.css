@@ -53,6 +53,10 @@ section {
     text-align: center;
 }
 
+.l-mbe--6080 {
+    margin-block-end: clamp(60px, 52.958px + 1.878vw, 80px);
+}
+
 /* component */
 /* header */
 .c-header__pc {
@@ -157,22 +161,29 @@ section {
 
 /* -----------------top-------------------- */
 
-.c-pro__text {
+.c-top--pro__text {
     text-align: center;
     line-height: 2;
 }
 
-.l-sec-members {
+.l-top__sec--members {
     background: var(--bg-light);
 }
 
-.l-mem__photo {
+.l-top__mem--photo {
     display: flex;
     gap: clamp(30px, -1.690px + 8.451vw, 120px);
 }
 
-.c-mem__img {
+.c-top__mem--img {
     width: 250px;
+}
+
+/* -----------------news-------------------- */
+.c-news__list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
 }
 
 @media(min-width:768px) {
