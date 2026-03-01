@@ -18,10 +18,11 @@ body {
     font-size: 16px;
     background: var(--base-white);
     line-height: 180%;
+    margin: 0 auto;
 }
 
 img {
-    width: 100%;
+    max-width: 100%;
 }
 
 /* -----------------共通部分---------------- */
@@ -43,10 +44,25 @@ img {
     padding-block: 12px;
 }
 
+.l-wrapper {
+    margin-inline: clamp(15px, -50.141px + 17.371vw, 200px);
+}
+
+section {
+    padding-block: clamp(60px, 52.958px + 1.878vw, 80px);
+    text-align: center;
+}
+
 /* component */
 /* header */
+.c-header__pc {
+    display: none;
+}
+
 .c-header-logo {
     width: 168px;
+    max-width: none;
+    flex-shrink: 0;
 }
 
 .c-header-nav {
@@ -76,6 +92,8 @@ img {
     border-bottom: solid var(--font-base);
     border-bottom-width: clamp(5px, 4.634px + 0.098vw, 6px);
     display: inline-block;
+    text-transform: uppercase;
+    margin-block-end: 80px;
 }
 
 .c-btn-container {
@@ -89,6 +107,7 @@ img {
     width: 200px;
     text-align: center;
     border-radius: 5px;
+    margin-block-start: 80px;
 }
 
 .c-btn a {
@@ -98,6 +117,10 @@ img {
 
 
 /* footer */
+.l-footer {
+    margin-block-start: clamp(60px, 52.958px + 1.878vw, 80px);
+}
+
 .c-footer-logo {
     width: 168px;
 }
@@ -106,6 +129,8 @@ img {
     display: flex;
     justify-content: center;
     gap: 30px;
+    align-items: center;
+    line-height: 100%;
 }
 
 .c-footer-nav ul {
@@ -127,6 +152,31 @@ img {
 
 .c-copy {
     font-size: 12px;
+    color: var(--base-white);
 }
 
 /* -----------------top-------------------- */
+
+.c-pro__text {
+    text-align: center;
+    line-height: 2;
+}
+
+.l-sec-members {
+    background: var(--bg-light);
+}
+
+.l-mem__photo {
+    display: flex;
+    gap: clamp(30px, -1.690px + 8.451vw, 120px);
+}
+
+.c-mem__img {
+    width: 250px;
+}
+
+@media(min-width:768px) {
+    .c-header__pc {
+        display: block;
+    }
+}
