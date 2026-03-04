@@ -184,6 +184,29 @@ section {
     display: flex;
     justify-content: center;
     gap: 30px;
+    margin-block-end: clamp(60px, 52.958px + 1.878vw, 80px);
+}
+
+
+.c-news-item {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: start;
+    margin-inline: auto;
+    margin-block-end: clamp(10px, 2.254px + 2.066vw, 32px);
+}
+
+.c-news-item__data {
+    display: flex;
+    gap: 10px;
+}
+
+.c-news-item__label {
+    color: var(--font-strong);
+    background: var(--hover);
+    padding-inline: 10px;
+    border-radius: 50px;
 }
 
 @media(min-width:768px) {
