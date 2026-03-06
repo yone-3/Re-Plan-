@@ -98,6 +98,7 @@ section {
     display: inline-block;
     text-transform: uppercase;
     margin-block-end: 80px;
+    padding-block-end: 10px;
 }
 
 .c-btn-container {
