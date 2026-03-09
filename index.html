@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <header class="l-header">
+    <header class="l-header__pc">
         <h1 class="c-header-logo">
             <a href="./index.html">
                 <img src="./image/logo.png" alt="リプランエイト">
@@ -55,6 +55,14 @@
             </div>
         </nav>
     </header>
+    <header class="l-header__sp">
+        <h1 class="c-header-logo">
+            <a href="./index.html">
+                <img src="./image/logo.png" alt="リプランエイト">
+            </a>
+        </h1>
+        <img src="./image/hamburger.svg" alt="">
+    </header>
 
     <main>
         <img src="./image/mv.jpg" alt="">
@@ -86,16 +94,23 @@
                 </div>
                 <div class="c-btn-container">
                     <p class="c-btn">
-                        <a href="">VIEW MORE</a>
+                        <a href="./member.html">VIEW MORE</a>
                     </p>
                 </div>
             </div>
         </section>
 
-        <section class="l-sec-news">
+        <section class="l-sec-news l-wrapper">
             <h2 class="c-title">
                 news
             </h2>
+            <div class="c-news-item">
+                <div class="c-news-item__data">
+                    <span class="c-news-item__label">release</span>
+                    <time datetime="2026-04-01" class="c-news-item__time">2026.04.01</time>
+                </div>
+                <p class="c-news-item__title">「Re:Born, Again」Music Video 公開</p>
+            </div>
             <div class="c-btn-container">
                 <p class="c-btn">
                     <a href="./news.html">VIEW MORE</a>
@@ -112,7 +127,7 @@
 
     </main>
 
-    <footer class="l-footer">
+    <footer class="l-footer__pc">
         <a href="./index.html">
             <img class="c-footer-logo" src="./image/logo-footer.png" alt="リプランエイト">
         </a>
@@ -157,6 +172,35 @@
                 </li>
                 <li class="c-footer-nav__list">
                     <a href="./contact.html">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+        <small class="c-copy">&copy;Re:Plan∞ / Infinity Culture Lab</small>
+        <p class="c-copy">
+            Observation Log archived by Infinity Culture Lab
+        </p>
+
+    </footer>
+    <footer class="l-footer__sp">
+        <a href="./index.html">
+            <img class="c-footer-logo" src="./image/logo-footer.png" alt="リプランエイト">
+        </a>
+        <div class="c-footer-sns">
+            <ul>
+                <li class="c-logo__insta">
+                    <a href="">
+                        <img src="./image/logo-insta__footer.svg" alt="インスタグラム">
+                    </a>
+                </li>
+                <li class="c-logo__you">
+                    <a href="">
+                        <img src="./image/logo-you__footer.svg" alt="ユーチューブ">
+                    </a>
+                </li>
+                <li class="c-logo__tik">
+                    <a href="">
+                        <img src="./image/logo-tiktok__footer.svg" alt="ティックトック">
+                    </a>
                 </li>
             </ul>
         </div>
