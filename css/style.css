@@ -264,8 +264,53 @@ section {
 }
 
 /* -----------------mem-------------------- */
+.c-mem__item {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-block-end: 60px;
+}
 
+.c-mem__img {
+    width: clamp(345px, 290.423px + 14.554vw, 500px);
+}
 
+.c-mem__name {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.c-mem__name--id {
+    font-size: 20px;
+    color: var(--font-sub);
+    font-weight: bold;
+}
+
+.c-mem__name--name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.c-mem__info--list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.c-mem__info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.c-mem__info--cate {
+    color: var(--font-strong);
+    font-weight: bold;
+    background: var(--hover);
+    padding-block: 10px;
+    width: 345px;
+}
 
 @media(min-width:768px) {
 
