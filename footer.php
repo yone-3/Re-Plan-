@@ -36,7 +36,7 @@
                     <a href="./schedule.html">SCHEDULE</a>
                 </li>
                 <li class="c-footer-nav__list">
-                    <a href="./members.html">MEMBERS</a>
+                    <a href="./member.html">MEMBERS</a>
                 </li>
                 <li class="c-footer-nav__list">
                     <a href="./discography.html">DISCOGRAPHY</a>

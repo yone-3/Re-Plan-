@@ -356,6 +356,11 @@ section {
         padding: 24px 100px;
     }
 
+    .l-header__sp,
+    .l-footer__sp {
+        display: none;
+    }
+
     .l-footer__pc {
         background: var(--base-dark);
         color: var(--hover);
