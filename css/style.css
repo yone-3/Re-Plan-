@@ -199,6 +199,11 @@ section {
     margin-block-end: clamp(60px, 52.958px + 1.878vw, 80px);
 }
 
+.c-news__list li.is-active {
+    font-weight: bold;
+    border-bottom: 2px solid #000;
+}
+
 
 .c-news-item {
     display: flex;
@@ -221,6 +226,10 @@ section {
     background: var(--hover);
     padding-inline: 10px;
     border-radius: 50px;
+}
+
+.c-news-item__title {
+    text-align-last: left;
 }
 
 /* -----------------news_detail-------------------- */
