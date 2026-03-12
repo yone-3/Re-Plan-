@@ -1,67 +1,80 @@
-document.addEventListener("DOMContentLoaded", () => {
+// ニュースリスト要素
+const newsList = document.querySelector(".js-news-list");
 
-    // news data
-    const news = [
-        { id: 1, category: "info", date: "2026-02-10", title: "Re:Plan∞ Official Website オープン" },
-        { id: 2, category: "info", date: "2026-02-10", title: "SNS公式アカウント開設のお知らせ" },
-        { id: 3, category: "info", date: "2026-02-20", title: "MEMBERSページ公開のお知らせ" },
-        { id: 4, category: "info", date: "2026-03-01", title: "DISCOGRAPHYページ公開" },
-        { id: 5, category: "release", date: "2026-03-01", title: "Re:Plan∞ デビューシングル「Re:Born, Again」リリース決定" },
-        { id: 6, category: "release", date: "2026-03-01", title: "「Re:Born, Again」ジャケット写真公開（Type A）" },
-        { id: 7, category: "info", date: "2026-03-05", title: "SCHEDULEページ近日公開予定" },
-        { id: 8, category: "release", date: "2026-03-08", title: "「Re:Born, Again」ジャケット写真公開（Type B）" },
-        { id: 9, category: "release", date: "2026-03-15", title: "「Re:Born, Again」Music Video 公開" },
-        { id: 10, category: "release", date: "2026-04-01", title: "「Re:Born, Again」Music Video 公開" }
-    ];
+// カテゴリーボタン
+const filterButtons = document.querySelectorAll(".c-news__list li");
 
-    const newsList = document.querySelector(".js-news-list");
-    const filterButtons = document.querySelectorAll(".c-news__list li");
 
-    function renderNews(category = "all") {
+// ニュース表示関数
+function renderNews(category = "all") {
 
-        newsList.innerHTML = "";
+  // リスト初期化
+  newsList.innerHTML = "";
 
-        const filteredNews = category === "all"
-            ? news
-            : news.filter(item => item.category === category);
+  // カテゴリーで絞り込み
+  const filteredNews = category === "all"
+    ? news
+    : news.filter(item => item.category === category);
 
-        filteredNews.forEach(item => {
+  filteredNews.sort((a, b) => new Date(b.date) - new Date(a.date));
 
-            const dateText = item.date.replaceAll("-", ".");
+  filteredNews.forEach(item => {
 
-            const html = `
-        <div class="c-news-item">
-            <div class="c-news-item__data">
-                <span class="c-news-item__label">${item.category}</span>
-                <time datetime="${item.date}" class="c-news-item__time">
-                    ${dateText}
-                </time>
-            </div>
+    // 日付フォーマット
+    const dateText = item.date.replaceAll("-", ".");
 
-            <p class="c-news-item__title">
-                <a href="./news_detail.html?id=${item.id}">
-                    ${item.title}
-                </a>
-            </p>
+    const html = `
+      <div class="c-news-item">
+
+        <div class="c-news-item__data">
+
+          <span class="c-news-item__label">
+            ${item.category}
+          </span>
+
+          <time datetime="${item.date}" class="c-news-item__time">
+            ${dateText}
+          </time>
+
         </div>
-        `;
 
-            newsList.insertAdjacentHTML("beforeend", html);
+        <p class="c-news-item__title">
+          <a href="./news_detail.html?id=${item.id}">
+            ${item.title}
+          </a>
+        </p>
 
-        });
-    }
+      </div>
+    `;
 
-    renderNews();
+    newsList.insertAdjacentHTML("beforeend", html);
 
-    filterButtons.forEach(button => {
+  });
 
-        button.addEventListener("click", () => {
+}
 
-            const category = button.textContent.toLowerCase();
-            renderNews(category === "all" ? "all" : category);
 
-        });
+// 初期表示
+renderNews();
 
-    });
+
+// カテゴリーフィルター
+filterButtons.forEach(button => {
+
+  button.addEventListener("click", () => {
+
+    const category = button.textContent.trim().toLowerCase();
+
+    // active削除
+    filterButtons.forEach(btn => btn.classList.remove("is-active"));
+
+    // active追加
+    button.classList.add("is-active");
+
+    renderNews(category);
+
+  });
 
 });
+
+filterButtons[0].classList.add("is-active");
