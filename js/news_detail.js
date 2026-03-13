@@ -15,6 +15,8 @@ if (article) {
     date.textContent = dateText;
     date.setAttribute("datetime", article.date);
 
+    desc.innerHTML = article.desc.replace(/\n/g, "<br>");
+
     desc.textContent = article.desc;
 
 }
