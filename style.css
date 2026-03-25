@@ -365,7 +365,6 @@ section {
     flex-direction: column;
     gap: 30px;
     margin-block-end: 60px;
-
 }
 
 .c-mem__img {
@@ -407,6 +406,17 @@ section {
     background: var(--hover);
     padding-block: 10px;
     width: 345px;
+}
+
+.c-members-photos {
+    display: flex;
+    justify-content: center;
+    margin-block-end: clamp(60px, 52.958px + 1.878vw, 80px);
+    flex-wrap: wrap;
+}
+
+.c-members-photos img {
+    width: clamp(65px, 38.592px + 7.042vw, 140px);
 }
 
 /* -----------------sche-------------------- */
