@@ -16,8 +16,8 @@ const members = [
         symbol: "自己認識・鏡",
         color: "シルバー",
         copy: "映る私が、本当の私",
-        photoImg: "01yui_squire.jpg",
-        btnPhoto: "01yui-maru.png"
+        photoImg: "02mira_squire.jpg",
+        btnPhoto: "02mira-maru.png"
     },
     {
         id: 3,
@@ -26,8 +26,8 @@ const members = [
         symbol: "声・共鳴",
         color: "アクアブルー",
         copy: "この声が、あなたを再生する",
-        photoImg: "01yui_squire.jpg",
-        btnPhoto: "01yui-maru.png"
+        photoImg: "03noa_squire.jpg",
+        btnPhoto: "03noa-maru.png"
     },
     {
         id: 4,
@@ -36,8 +36,8 @@ const members = [
         symbol: "運動・再構築",
         color: "ネオンブルー",
         copy: "壊れた体ほど、美しく踊れる",
-        photoImg: "01yui_squire.jpg",
-        btnPhoto: "01yui-maru.png"
+        photoImg: "04rio_squire.jpg",
+        btnPhoto: "04rio-maru.png"
     },
     {
         id: 5,
@@ -46,8 +46,8 @@ const members = [
         symbol: "記憶・思考",
         color: "パープル",
         copy: "私は分裂した、だから賢い",
-        photoImg: "01yui_squire.jpg",
-        btnPhoto: "01yui-maru.png"
+        photoImg: "05aya_squire.jpg",
+        btnPhoto: "05aya-maru.png"
     },
     {
         id: 6,
@@ -56,8 +56,8 @@ const members = [
         symbol: "回復・安心",
         color: "ライトグリーン",
         copy: "治らない傷なんて、ないよ",
-        photoImg: "01yui_squire.jpg",
-        btnPhoto: "01yui-maru.png"
+        photoImg: "06haru_squire.jpg",
+        btnPhoto: "06haru-maru.png"
     },
     {
         id: 7,
@@ -66,8 +66,8 @@ const members = [
         symbol: "影・孤立",
         color: "ダークグレー",
         copy: "切り離されたのは、弱さだけ",
-        photoImg: "01yui_squire.jpg",
-        btnPhoto: "01yui-maru.png"
+        photoImg: "07sena_squire.jpg",
+        btnPhoto: "07sena-maru.png"
     }, {
         id: 8,
         yourName: "Luna",
@@ -75,8 +75,8 @@ const members = [
         symbol: "未来・無限",
         color: "クリアピンク",
         copy: "増えるって、楽しいよ？",
-        photoImg: "01yui_squire.jpg",
-        btnPhoto: "01yui-maru.png"
+        photoImg: "08luna_squire.jpg",
+        btnPhoto: "08luna-maru.png"
     }
 ]
 

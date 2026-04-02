@@ -72,21 +72,71 @@
         contact
       </h1>
 
-      <p>Coming soon...</p>
+      <div>
+        <div>
+          <div>
+            <div>
+              <ul class="c-form-list">
+                <li>下記フォームにお問い合わせ内容をご入力の上、「送信内容を確認する」ボタンを押してください。</li>
+                <li>送信前には「個人情報の取扱いについての同意」の項目を必ずご一読いただき、<br />
+                  同意いただける場合のみ「同意する」にチェックを入れ入力内容確認画面へお進みください。</li>
+                <li>
+                  <p>※同意いただけない場合はお問い合わせをご利用いただけません。</p>
+                </li>
+              </ul>
 
-      <!-- <form action="" method="post">
-        <label>a</label>
-        <input type="text" name="name" id="name" placeholder="Your name">
-      </form> -->
+            </div>
+          </div>
+          <form action="" method="post">
+            <div>
+              <p class="tal">「※」は必須項目です。必ずご記入ください。</p>
 
+              <div class="c-form-flex">
+                <dt class="w80">お名前<span class="c-red">※</span></dt>
+                <dd><span class="c-con-form"><input type="text" name="name" value="" maxlength="50" /></span>
+                  <p>50文字以内</p>
+                </dd>
+              </div>
+              <div class="c-form-flex">
+                <dt class="w80">フリガナ<span class="c-red">※</span></dt>
+                <dd><span class="c-con-form"><input type="text" name="name_kana" value="" maxlength="50"></span>
+                  <p>50文字以内</p>
+                </dd>
+              </div>
+              <div class="c-form-flex">
+                <dt class="w80">TEL</dt>
+                <dd><span class="c-con-form"><input type="text" name="tel" value="" maxlength="15"></span>
+                  <p>半角数字（ハイフン含む）15文字以内</p>
+                </dd>
+              </div>
+
+              <div class="c-form-flex">
+                <dt class="w80">メールアドレス<span class="c-red">※</span></dt>
+                <dd><span class="c-con-form"><input type="text" name="mail" value="" maxlength="150"></span>
+                  <p>半角英数150文字以内</p>
+                </dd>
+              </div>
+              <div class="c-form-flex">
+                <dt class="w168">お問い合わせ内容<span class="c-red">※</span></dt>
+                <dd><span class="c-con-form"><textarea name="content" cols="60" rows="4"
+                      maxlength="3000"></textarea></span>
+                  <p>3000文字以内</p>
+                </dd>
+              </div>
+              <div>
+                <ul>
+                  <li class="c-btn-container">
+                    <input type="submit" value="送信内容を確認する" class="c-btn">
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
     </section>
 
-    <!-- ボタン -->
-    <!-- <div class="c-btn-container">
-            <p class="c-btn">
-                <a href="">VIEW MORE</a>
-            </p>
-        </div> -->
+
 
   </main>
 

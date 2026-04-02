@@ -1,5 +1,11 @@
 @charset "UTF-8";
 
+/* 
+Theme Name : Re:Plan∞
+Description : Re:Plan∞のテーマ
+Author : Ehara
+Version : 1.0 */
+
 :root {
     --base-white: #f7f8f9;
     --font-base: #6E7688;
@@ -97,6 +103,10 @@ section {
 }
 
 /* other */
+.c-bread {
+    font-size: 12px;
+}
+
 .c-title {
     font-size: clamp(32px, 26.146px + 1.561vw, 48px);
     font-weight: bold;
@@ -199,11 +209,10 @@ section {
     margin-block-end: clamp(60px, 52.958px + 1.878vw, 80px);
 }
 
-.c-news__list li.is-active {
+.c-news__list li.is-active a {
     font-weight: bold;
-    border-bottom: 2px solid #000;
-}
 
+}
 
 .c-news-item {
     display: flex;
@@ -249,7 +258,7 @@ section {
 
 /* -----------------news_detail-------------------- */
 .c-news-detail__title {
-    font-size: clamp(20px, 10.141px + 2.629vw, 48px);
+    font-size: clamp(20px, 14.366px + 1.502vw, 36px);
     font-weight: bold;
     color: var(--font-strong);
     border-bottom: solid var(--font-base);
@@ -412,6 +421,7 @@ section {
     display: flex;
     justify-content: center;
     margin-block-end: clamp(60px, 52.958px + 1.878vw, 80px);
+    gap: 20px;
     flex-wrap: wrap;
 }
 
@@ -435,7 +445,7 @@ section {
 .c-sche__item {
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: center;
     padding: 15px;
     gap: clamp(15px, 9.718px + 1.408vw, 30px);
     border-bottom: 1px solid var(--border);
@@ -446,11 +456,120 @@ section {
     padding-inline: 20px;
     padding-block: 10px;
     color: var(--font-strong);
+    width: 200px;
 }
 
 .c-sche__desc {
     text-align-last: left;
     font-weight: bold;
+}
+
+.c-pri-text {
+    text-align: center;
+    margin-block-start: 40px;
+    color: var(--base-dark);
+}
+
+.c-sche-detail__title {
+    font-size: clamp(20px, 10.141px + 2.629vw, 48px);
+    font-weight: bold;
+    color: var(--font-strong);
+    border-bottom: solid var(--font-base);
+    border-bottom-width: clamp(5px, 4.634px + 0.098vw, 6px);
+    display: inline-block;
+    margin-block-end: 80px;
+    padding-block-end: 10px;
+    line-height: 100%;
+}
+
+.c-sche-detail__desc {
+    text-align-last: left;
+    padding-block-end: 20px;
+}
+
+.c-sche-detail__flex {
+    display: flex;
+    gap: 20px;
+}
+
+/* -----------------pri-------------------- */
+.c-pri-sec {
+    text-align-last: left;
+    padding-block: 30px;
+}
+
+.c-pri-sec li {
+    list-style-type: disc;
+    margin-inline-start: 30px;
+}
+
+.c-pri-title {
+    font-weight: bold;
+    padding-block-start: 20px;
+    font-size: 18px;
+}
+
+/* -----------------contact-------------------- */
+input,
+textarea {
+    border: 2px solid var(--border);
+    border-radius: 5px;
+    padding: 10px;
+    text-align-last: left;
+    display: block;
+    box-sizing: border-box;
+}
+
+input {
+    width: 500px;
+    height: auto;
+}
+
+textarea {
+    width: 800px;
+    min-height: 150px;
+    display: block;
+}
+
+.c-form-flex {
+    display: flex;
+    padding-block: 30px;
+    gap: 30px;
+    align-items: center;
+    border-top: 1px solid var(--hover);
+}
+
+.c-form-flex dt {
+    width: 300px;
+    background: var(--bg-light);
+    display: flex;
+    align-items: center;
+    padding-inline: 15px;
+}
+
+.c-form-flex dd {
+    text-align-last: left;
+}
+
+.c-red {
+    color: red;
+}
+
+.c-form-list li {
+    list-style-type: disc;
+    text-align-last: left;
+}
+
+.tal {
+    padding-block-start: 40px;
+}
+
+.w80 {
+    height: 80px;
+}
+
+.w168 {
+    height: 168px;
 }
 
 @media(min-width:768px) {
