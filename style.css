@@ -200,6 +200,17 @@ section {
     width: 250px;
 }
 
+/* -----------------project-------------------- */
+.c-pro-text {
+    padding-block: 20px;
+    line-height: 1.9;
+}
+
+.c-pro-img {
+    width: 90%;
+    padding-block-end: 60px;
+}
+
 /* -----------------news-------------------- */
 .c-news__list,
 .c-sche__list {
