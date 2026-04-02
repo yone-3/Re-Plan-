@@ -6,7 +6,7 @@ const members = [
         symbol: "核・起源・記憶",
         color: "ミルキーホワイト",
         copy: "最初の私は、今もここにいる",
-        photoImg: "01yui_squire.jpg",
+        photoImg: "01yui_square.jpg",
         btnPhoto: "01yui-maru.png"
     },
     {
@@ -16,7 +16,7 @@ const members = [
         symbol: "自己認識・鏡",
         color: "シルバー",
         copy: "映る私が、本当の私",
-        photoImg: "02mira_squire.jpg",
+        photoImg: "02mira_square.jpg",
         btnPhoto: "02mira-maru.png"
     },
     {
@@ -26,7 +26,7 @@ const members = [
         symbol: "声・共鳴",
         color: "アクアブルー",
         copy: "この声が、あなたを再生する",
-        photoImg: "03noa_squire.jpg",
+        photoImg: "03noa_square.jpg",
         btnPhoto: "03noa-maru.png"
     },
     {
@@ -36,7 +36,7 @@ const members = [
         symbol: "運動・再構築",
         color: "ネオンブルー",
         copy: "壊れた体ほど、美しく踊れる",
-        photoImg: "04rio_squire.jpg",
+        photoImg: "04rio_square.jpg",
         btnPhoto: "04rio-maru.png"
     },
     {
@@ -46,7 +46,7 @@ const members = [
         symbol: "記憶・思考",
         color: "パープル",
         copy: "私は分裂した、だから賢い",
-        photoImg: "05aya_squire.jpg",
+        photoImg: "05aya_square.jpg",
         btnPhoto: "05aya-maru.png"
     },
     {
@@ -56,7 +56,7 @@ const members = [
         symbol: "回復・安心",
         color: "ライトグリーン",
         copy: "治らない傷なんて、ないよ",
-        photoImg: "06haru_squire.jpg",
+        photoImg: "06haru_square.jpg",
         btnPhoto: "06haru-maru.png"
     },
     {
@@ -66,7 +66,7 @@ const members = [
         symbol: "影・孤立",
         color: "ダークグレー",
         copy: "切り離されたのは、弱さだけ",
-        photoImg: "07sena_squire.jpg",
+        photoImg: "07sena_square.jpg",
         btnPhoto: "07sena-maru.png"
     }, {
         id: 8,
@@ -75,7 +75,7 @@ const members = [
         symbol: "未来・無限",
         color: "クリアピンク",
         copy: "増えるって、楽しいよ？",
-        photoImg: "08luna_squire.jpg",
+        photoImg: "08luna_square.jpg",
         btnPhoto: "08luna-maru.png"
     }
 ]
